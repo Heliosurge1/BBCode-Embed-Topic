@@ -1,1 +1,35 @@
-// Theme's SCSS
+.embedded-topic-container {
+  border: 1px solid var(--primary-low);
+  border-radius: var(--border-radius);
+  padding: var(--spacing);
+  margin-block: var(--spacing);
+  background-color: var(--primary-very-low);
+
+  .embedded-topic-header {
+    font-weight: bold;
+    margin-bottom: var(--spacing-half);
+    color: var(--primary);
+
+    a {
+      text-decoration: none;
+      color: var(--primary);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .embedded-topic-content {
+    max-height: 400px; /* Limit height for long topics */
+    overflow: auto;
+    padding-right: var(--spacing-half); /* For scrollbar */
+    border-top: 1px solid var(--primary-low);
+    padding-top: var(--spacing-half);
+  }
+
+  .embedded-topic-error {
+    color: var(--danger);
+    font-style: italic;
+  }
+}
