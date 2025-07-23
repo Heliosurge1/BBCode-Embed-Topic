@@ -1,2 +1,4 @@
-example_setting:
-  default: true
+embed_topic_max_topics:
+  default: 5
+  type: integer
+  description: "Maximum number of topics that can be embedded in a single post."
